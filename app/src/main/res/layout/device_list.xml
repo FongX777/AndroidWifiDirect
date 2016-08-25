@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Self information -->
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="@string/label_peers" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:gravity="center_vertical"
+        android:background="@color/colorMain" />
+    <!-- Available peers -->
+
+    <TextView
+        android:id="@+id/device_list_description"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="@string/empty_message"
+        android:textSize="30dp"
+        android:gravity="center_horizontal"/>
+    <RelativeLayout
+        android:id="@+id/discoverArea"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border">
+        <ListView
+            android:id="@id/android:list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawSelectorOnTop="false" />
+        <Button
+            android:id="@+id/device_list_discover_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_border"
+            android:drawableTop="@drawable/ic_search"
+            android:layout_marginTop="51dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

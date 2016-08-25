@@ -1,0 +1,34 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:All4One="http://schemas.android.com/tools">
+
+    <!-- "Mark Favorite", should appear as action button if possible -->
+    <item
+        android:id="@+id/toolbar_wifi_switch"
+        android:icon="@drawable/ic_wifi_off"
+        android:title="wifi"
+        app:showAsAction="ifRoom"/>
+
+
+    <item android:id="@+id/toolbar_moreAction"
+        android:icon="@drawable/ic_overflow_menu_black_24dp"
+        android:title="more"
+        app:showAsAction="always">
+        <menu xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto">
+            <item android:id="@+id/toolbar_discover"
+                android:icon="@drawable/ic_search_black_24dp"
+                android:title="discover"/>
+
+            <item android:id="@+id/toolbar_settings"
+                android:icon="@drawable/ic_settings_black_24dp"
+                android:title="settings"/>
+
+            <item android:id="@+id/action_about"
+                android:icon="@drawable/ic_help_black_24dp"
+                android:title="about"/>
+        </menu>
+    </item>
+
+
+</menu>

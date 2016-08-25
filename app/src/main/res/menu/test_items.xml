@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:All4One="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/algo"
+    android:icon="@drawable/ic_overflow_menu_black_24dp"
+    android:title="nose"
+    All4One:showAsAction="always">
+        <menu>
+            <item android:id="@+id/WIFI"
+            android:icon="@drawable/ic_signal_wifi_4_bar_black_24dp"
+            android:title="WIFI"/>
+
+            <item android:id="@+id/DATOS"
+                android:icon="@drawable/ic_build_black_24dp"
+            android:title="build"/>
+
+            <item android:id="@+id/BT"
+                android:icon="@drawable/ic_settings"
+                android:title="settings"/>
+
+            <item android:id="@+id/help"
+                android:icon="@drawable/ic_help_black_24dp"
+            android:title="help"/>
+        </menu>
+    </item>
+</menu>
