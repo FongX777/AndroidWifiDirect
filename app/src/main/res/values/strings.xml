@@ -28,4 +28,6 @@
     <string name="drawer_SSID">SSID:</string>
     <string name="drawer_favoriteList">FAVRORITE LIST</string>
     <string name="drawer_historyDevice">HISTORY DEVICE</string>
+
+    <string name="to_ap_mode">toApMode</string>
 </resources>

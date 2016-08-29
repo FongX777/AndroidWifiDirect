@@ -27,6 +27,7 @@
         android:text="@string/empty_message"
         android:textSize="30dp"
         android:gravity="center_horizontal"/>
+
     <RelativeLayout
         android:id="@+id/discoverArea"
         android:layout_width="match_parent"
@@ -35,8 +36,10 @@
         <ListView
             android:id="@id/android:list"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
             android:drawSelectorOnTop="false" />
+
         <Button
             android:id="@+id/device_list_discover_button"
             android:layout_width="wrap_content"
