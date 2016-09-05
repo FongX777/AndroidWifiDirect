@@ -15,6 +15,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -30,17 +31,22 @@ public class DeviceListFragment extends ListFragment implements WifiP2pManager.P
     ProgressDialog progressDialog = null;
     View mContentView = null;
     private WifiP2pDevice device;
+    private Button discover_btn;
+
 
 
     @Override
     public void onCreate(Bundle savedInstanceState){
 
         super.onCreate(savedInstanceState);
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         mContentView = inflater.inflate(R.layout.device_list, null); // similar to setContentView in activity
+//        discover_btn = (Button)getActivity().findViewById(R.id.device_list_discover_button);
+//        discover_btn.setOnClickListener(discoverButtonListener);
         return mContentView;
     }
 
@@ -55,7 +61,7 @@ public class DeviceListFragment extends ListFragment implements WifiP2pManager.P
     public WifiP2pDevice getDevice() {
         return device;
     }
-    private static String getDeviceStatus(int deviceStatus) {
+    public static String getDeviceStatus(int deviceStatus) {
         Log.d(WiFiDirectActivity.TAG, "Peer status :" + deviceStatus);
         switch (deviceStatus) {
             case WifiP2pDevice.AVAILABLE:
@@ -73,6 +79,13 @@ public class DeviceListFragment extends ListFragment implements WifiP2pManager.P
 
         }
     }
+
+    private Button.OnClickListener discoverButtonListener = new Button.OnClickListener(){
+        @Override
+        public void onClick(View view) {
+
+        }
+    };
     /**
      * Initiate a connection with the peer.
      */

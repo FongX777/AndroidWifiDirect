@@ -24,10 +24,13 @@
     <string name="drawer_close">Drawer Close</string>
 
     <string name="drawer_userPhoto">userPhoto.jpg</string>
-    <string name="drawer_userName">NAME:</string>
-    <string name="drawer_SSID">SSID:</string>
+    <string name="drawer_userName">NAME: </string>
+    <string name="drawer_userStatus">STATUS: </string>
     <string name="drawer_favoriteList">FAVRORITE LIST</string>
     <string name="drawer_historyDevice">HISTORY DEVICE</string>
 
     <string name="to_ap_mode">toApMode</string>
+
+
+    <string name="defaultUserName">Default</string>
 </resources>

@@ -62,7 +62,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="1dp"
-                    android:src="@drawable/usericon" />
+                    android:src="@mipmap/icon1" />
                 <LinearLayout
                     android:orientation="vertical"
                     android:layout_width="0dp"
@@ -76,13 +76,14 @@
                         android:text="@string/drawer_userName"
                         android:textSize="20dp"/>
                     <TextView
-                        android:id="@+id/userSSID"
+                        android:id="@+id/userStatus"
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="1dp"
-                        android:text="@string/drawer_SSID"
+                        android:text="@string/drawer_userStatus"
                         android:textSize="20dp"/>
                     <Button
+                        android:id="@+id/drawer_btn_profileEdit"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="1dp"
